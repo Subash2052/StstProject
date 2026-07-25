@@ -51,7 +51,7 @@ print("\nCoefficients:")
 for column, coef in zip(X.columns, model.coef_[0]):
     print(f"{column}: {coef}")
 
-# Accuracy
+# Accuracy 123
 print("\nAccuracy:")
 print(accuracy_score(y_test, predictions))
 
