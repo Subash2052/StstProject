@@ -12,14 +12,14 @@ from sklearn.metrics import (
 df = pd.read_csv("../data/Churn_Cleaned.csv")
 
 # Independent variables
+# Independent variables (optimized model)
 X = df[
     [
         "Complains",
         "Frequency of use",
         "Seconds of Use",
         "Charge Amount",
-        "Customer Value",
-        "Subscription Length"
+        "Customer Value"
     ]
 ]
 

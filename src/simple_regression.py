@@ -1,5 +1,5 @@
 import pandas as pd
-
+from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
@@ -23,3 +23,7 @@ print("Coefficient:", model.coef_[0])
 r2 = r2_score(y_test, predictions)
 
 print("R-squared:", r2)
+# Calculate Mean Squared Error
+mse = mean_squared_error(y_test, predictions)
+
+print("Mean Squared Error:", mse)
